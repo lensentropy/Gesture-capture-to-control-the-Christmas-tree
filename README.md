@@ -1,2 +1,50 @@
-# Gesture-capture-to-control-the-Christmas-tree
-Gesture capture to control the Christmas tree（Motion capture, front-end control）
+# Dreamy Xmas · Hand Joint Tracking V2
+
+这是修复 `localhost 未发送任何数据` 的稳健启动版。
+
+## Windows 推荐运行方式
+
+1. 先完整解压 zip，不要在压缩包预览里直接运行。
+2. 双击 `一键启动.bat`。
+3. 等待命令行窗口显示 `Open address`。
+4. 浏览器会自动打开，地址类似：
+
+```txt
+http://127.0.0.1:8765/index.html
+```
+
+如果 8765 被占用，脚本会自动换成 8766、8767 等可用端口，以命令行窗口显示的地址为准。
+
+## 如果仍然打不开
+
+不要再打开旧地址 `http://localhost:8000`，请使用窗口里显示的 `http://127.0.0.1:端口/index.html`。
+
+常见原因：
+
+- Python 没安装，服务器没有启动；
+- 端口 8000 被其他程序占用；
+- 在压缩包内部直接双击，文件没有真正解压；
+- 浏览器缓存了旧页面；
+- 安全软件拦截了本地服务；
+- 电脑无法访问 CDN，导致 Three.js 或 MediaPipe 模型加载失败。
+
+## 项目功能
+
+- Three.js 粒子圣诞树；
+- MediaPipe 21 个手部关键点捕捉；
+- 手部骨架叠加；
+- MCP / PIP / DIP / IP 指节角度追踪；
+- 捏合强度连续控制粒子爆散；
+- 食指指尖控制 3D 场景旋转；
+- 指尖轨迹光带；
+- 伸出手指数切换主题。
+
+## 备用方式
+
+在项目目录打开终端，运行：
+
+```bash
+python start_server.py
+```
+
+然后复制窗口中显示的地址到 Chrome / Edge。
