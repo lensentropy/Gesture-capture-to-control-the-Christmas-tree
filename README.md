@@ -6,7 +6,7 @@ Dreamy Xmas · Hand Joint Tracking V2 is an immersive browser-based interactive 
 
 ## Author Information
 
-- **Author**: Jiangtao Xie  （only）
+- **Author**: Jiangtao Xie 
 - **Affiliation**: Ocean University of China  
 - **Project Name**: Dreamy Xmas · Hand Joint Tracking V2  
 - **Project Type**: Browser-based 3D interaction and AI hand-tracking project  
